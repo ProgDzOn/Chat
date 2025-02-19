@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الشات</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>تطبيق الشات</h2>
+        </div>
+        <div id="chat-box" class="chat-box"></div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="اكتب رسالتك هنا..." />
+            <button id="send-button">إرسال</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

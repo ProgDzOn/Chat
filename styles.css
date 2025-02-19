@@ -1,0 +1,90 @@
+/* التصميم العام */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl;
+}
+
+/* حاوية الشات */
+.chat-container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* رأس الشات */
+.chat-header {
+    background-color: #6c5ce7;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* منطقة عرض الرسائل */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* الرسائل */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.message.user {
+    background-color: #6c5ce7;
+    color: #fff;
+    margin-left: auto;
+}
+
+.message.other {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-right: auto;
+}
+
+/* منطقة إدخال الرسائل */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input button {
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #5a4dcc;
+}
